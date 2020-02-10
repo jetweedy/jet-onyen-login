@@ -42,7 +42,7 @@ function jet_onyen_login() {
 	global $__JET_ONYEN_LOGIN_ADMIN_USERNAME;
 	$html = "";
 	$html .= "<div class='jet-onyen-login'>";
-	if ( !isset($_SESSION['UNC_ONYEN']) || $_SESSION['UNC_ONYEN']==NULL || !$_SESSION['UNC_ONYEN'] ) {
+	if ( true || !isset($_SESSION['UNC_ONYEN']) || $_SESSION['UNC_ONYEN']==NULL || !$_SESSION['UNC_ONYEN'] ) {
 		require_once("jetAuth.php");
 		require_once("onyenAuth.php");
 		$oa = new onyenAuth(array());
