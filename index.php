@@ -41,7 +41,7 @@ function jet_onyen_login() {
 	global $__JET_ONYEN_LOGIN_DIRECTORY;
 	global $__JET_ONYEN_LOGIN_ADMIN_USERNAME;
 	$html = "";
-	$html .= "<div class='jet-onyen-login'>";
+//	$html .= "<div class='jet-onyen-login'>";
 	if ( true || !isset($_SESSION['UNC_ONYEN']) || $_SESSION['UNC_ONYEN']==NULL || !$_SESSION['UNC_ONYEN'] ) {
 		require_once("jetAuth.php");
 		require_once("onyenAuth.php");
@@ -58,7 +58,7 @@ function jet_onyen_login() {
 //		$html .= "<a href='/wp-admin' target='_blank'>Wordpress Admin</a> | ";
 		$html .= "<a href='/wp-content/plugins/jet-onyen-login/logout.php' target='_blank'>ONYEN logout</a>";
 	}
-	$html .= "</div>";
+//	$html .= "</div>";
 	return $html;
 }
 add_shortcode( 'jet-onyen-login', 'jet_onyen_login' );
